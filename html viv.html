@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s11.favim.com/orig/7/778/7787/77871/academia-books-symbolists-Favim.com-7787189.jpg");
+  min-height: 100%;
+}
+
+.skill {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#skill" class="w3-button w3-block w3-black">SKILLS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACTS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Hello :> <br>I'm graphic designer!</span>
+  </div>
+ 
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT</span></h5>
+    
+    <p>Hi! My name is Marhavatova Altynai. I'm 2nd course student of MUA college and I study Computer Graphic design. If you are interested scroll down to know more about me and my skills.                        </p>
+    <p> You can also see my work pieces on my Behance profile, which you can find if you press "contact" button. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>  </i></p>
+      
+    </div>
+    <img src="images/3.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">EDUCATION</span></h5>
+    <p><strong>2011-2019:</strong> Elementary-middle complex school "Davha" </p>
+    <p><strong>2019-2020:</strong> School Gymnasium №12</p>
+    <p><strong>2020-2022:</strong> 1-2 courses MUA college</p>
+  </div>
+</div>
+
+<!-- Skills Container -->
+<div class="w3-container" id="skill">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">SKILLS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openSkill(event, 'Software');" id="myLink">
+        <div class="w3-col s6 tablink">Software </div>
+      </a>
+      <a href="javascript:void(0)" onclick="openSkill(event, 'Languages');">
+        <div class="w3-col s6 tablink">Languages</div>
+      </a>
+    </div>
+
+    <div id="Software" class="w3-container skill w3-padding-48 w3-card">
+      <h5>Adobe Illustrator</h5>
+      <p class="w3-text-grey">Creating flat or vector compositions, illustrations; Detailed characters and etc.</p><br>
+    
+      <h5>Adobe Photoshop</h5>
+      <p class="w3-text-grey"> Creating 2D illustrations and characters; Editing and other</p><br>
+    
+      <h5>Adobe After Effects</h5>
+      <p class="w3-text-grey">Basic animated compositions and 2D rigging</p><br>
+    
+   <h5>Visual Studio Code </h5>
+      <p class="w3-text-grey">Basics of IT and Programming; HTML and JAVA SCRIPT</p>
+  </div>
+
+
+    <div id="Languages" class="w3-container skill w3-padding-48 w3-card">
+      <h5>English</h5>
+      <p class="w3-text-grey">Upper-Intermediate</p><br>
+    
+      <h5>Turkish</h5>
+      <p class="w3-text-grey">Pre-Intermediate</p><br>
+    
+      <h5>Kyrgyz</h5>
+      <p class="w3-text-grey">Native speaker</p><br>
+    
+      <h5>Russian</h5>
+      <p class="w3-text-grey">Advanced</p>
+    
+      
+    </div>  
+    <img src="images/4.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND ME</span></h5>
+
+    <p><span class="w3-tag">EMAIL:</span>  geumcorn@gmail.com</p>
+    <p><span class="w3-tag">BEHANCE:</span>  altynai marhavatova</p>
+
+    <p><strong> Or just send me a message:</strong></p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email \ Number" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed skill table
+function openSkill(evt, skillName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("skill");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(skillName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
